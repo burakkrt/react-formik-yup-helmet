@@ -4,6 +4,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { FormValidationSchema } from "../FromValidationSchema.jsx";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { getContext } from "../context/ContextProvider.jsx";
+import { CustomHelmet } from "../helmet/index.jsx";
 
 export default function Singup() {
   const location = useLocation();
@@ -11,7 +12,8 @@ export default function Singup() {
   const navigate = useNavigate();
 
   return (
-    <div className="mx-auto grid h-screen w-2/5 w-full items-center">
+    <div className="mx-auto grid h-screen w-1/3 w-full items-center">
+      <CustomHelmet title="React Formik | Singup" />
       {location?.state?.inital && (
         <p className="mb-2 max-w-lg rounded bg-red-300 p-2 text-slate-700 shadow">
           <BiSolidMessageRoundedDetail className="me-2 inline-block text-3xl text-slate-700" />
@@ -29,7 +31,7 @@ export default function Singup() {
           setProfile((prevState) => ({ ...prevState, ...values }));
           setLogin(true);
           actions.resetForm();
-          navigate("/proile");
+          navigate("/profile");
         }}
       >
         {(props) => (

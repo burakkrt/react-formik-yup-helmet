@@ -17,6 +17,9 @@ In React, it is a simple application that we use additional package formics that
 - [**formik@2.4.2**](https://formik.org)
 - [**react-helmet-async@1.3.0**](https://github.com/staylor/react-helmet-async)
 - [**yup@1.2.0**](https://www.npmjs.com/package/yup)
+- [**prettier@2.8.8**](https://prettier.io)
+- [**prettier-plugin-tailwindcss@0.3.0**](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+
 
 ## Run it on your computer
 

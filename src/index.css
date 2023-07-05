@@ -27,3 +27,7 @@ html {
     }
 
 }
+
+.active {
+    color: #A2FF86;
+}
